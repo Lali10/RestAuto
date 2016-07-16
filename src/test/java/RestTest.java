@@ -20,6 +20,14 @@ public class RestTest {
 	int statuscode=	
 		given().
 		      param("user_id", "lali20000").
+		      param("Authorization","OAuth ").
+		      param("oauth_consumer_key","DC0sePOBbQ8bYdC8r4Smg").
+		      param("oauth_signature_method","HMAC-SHA1").
+		      param("oauth_timestamp","1468635221").
+		      param("oauth_nonce","237279448").
+		      param("oauth_version","1.0").
+		      param("oauth_token","753707781442588672-MHaVfshYyLO9Qxfa5hXrgIgJRYxT07u").
+		      param("oauth_signature","%2BeN%2Bif3oHVdWSQQ%2Fu2kUI7hkoLw%3D").
 		      
 		      get(url).
 	 
