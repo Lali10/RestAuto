@@ -28,12 +28,15 @@ public class RestTest {
 		      param("oauth_version","1.0").
 		      param("oauth_token","753707781442588672-MHaVfshYyLO9Qxfa5hXrgIgJRYxT07u").
 		      param("oauth_signature","%2BeN%2Bif3oHVdWSQQ%2Fu2kUI7hkoLw%3D").
-		      
+		      param("Host","api.twitter.com").
+		      param("X-Target-URI","https://api.twitter.com").
+		      param("Connection","Keep-Alive").
+		     
 		      get(url).
 	 
 		     statusCode();
-		
-		//Assert.assertEquals(statuscode, 200);
-	Assert.assertTrue(statuscode==200);
+		//System.out.println(statuscode);
+	//Assert.assertEquals(statuscode, 401);
+	Assert.assertTrue(statuscode==401);
 	}
 }
